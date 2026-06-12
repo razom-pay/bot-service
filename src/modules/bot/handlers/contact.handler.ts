@@ -35,7 +35,7 @@ export function registerContactHandler(bot: Telegraf<TelegrafContext>) {
 						[
 							{
 								text: 'Повернутися на сайт',
-								url: `https://razom-pay.ua/auth/tg-finalize?sessionId=${sessionId}`
+								url: `${process.env.NEXT_PUBLIC_URL}/auth/tg-finalize?sessionId=${sessionId}`
 							}
 						]
 					],

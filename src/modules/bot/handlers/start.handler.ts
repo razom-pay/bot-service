@@ -12,7 +12,7 @@ export function registerStartHandler(bot: Telegraf<TelegrafContext>) {
 				Markup.inlineKeyboard([
 					Markup.button.url(
 						'Зареєструватися',
-						'https://razom-pay.ua/auth/login'
+						`${process.env.NEXT_PUBLIC_URL}/auth/login`
 					)
 				])
 			)
