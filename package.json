@@ -2,11 +2,11 @@
 	"name": "bot-service",
 	"version": "1.0.0",
 	"description": "",
-	"main": "dist/index.js",
+	"main": "dist/main.js",
 	"scripts": {
 		"start:dev": "nodemon",
-		"build": "tsc -p tsconfig.build.json",
-		"start": "node dist/index.js",
+		"build": "tsc -p tsconfig.json",
+		"start": "node -r tsconfig-paths/register dist/main.js -P tsconfig-paths.json",
 		"format": "prettier --write 'src/**/*.ts'"
 	},
 	"keywords": [],
